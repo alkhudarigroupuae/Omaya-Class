@@ -2,6 +2,16 @@
 
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 
+## 🌐 **Where is the website? / أين الموقع؟**
+
+### ✅ **Live Site / الموقع المباشر:**
+- **Vercel Dashboard**: https://vercel.com/belals-projects-4752af6b/omaya
+- **GitHub Pages** (after PR merge): https://alkhudarigroupuae.github.io/Omaya-Class/
+
+📖 **For detailed deployment info, see [DEPLOYMENT.md](./DEPLOYMENT.md)**
+
+---
+
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/belals-projects-4752af6b/omaya)
 [![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://alkhudarigroupuae.github.io/Omaya-Class/)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/b7Up2priqNH)
