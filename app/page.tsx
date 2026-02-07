@@ -29,8 +29,8 @@ export default function Home() {
       </Suspense>
       <HeroSection />
       <ExportQualitySection />
-      <ProductsSection />
       <PackagingCategories />
+      <ProductsSection />
       <IceCreamFeatured />
       <CakeFeatured />
       <AboutSection />
