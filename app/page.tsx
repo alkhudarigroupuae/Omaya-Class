@@ -2,7 +2,9 @@ import { Suspense } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/hero-section"
+import { ExportQualitySection } from "@/components/export-quality-section"
 import { ProductsSection } from "@/components/products-section"
+import { PackagingCategories } from "@/components/packaging-categories"
 import { AboutSection } from "@/components/about-section"
 import { ContactSection } from "@/components/contact-section"
 import { IceCreamFeatured } from "@/components/ice-cream-featured"
@@ -26,7 +28,9 @@ export default function Home() {
         <Header />
       </Suspense>
       <HeroSection />
+      <ExportQualitySection />
       <ProductsSection />
+      <PackagingCategories />
       <IceCreamFeatured />
       <CakeFeatured />
       <AboutSection />

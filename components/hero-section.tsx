@@ -3,6 +3,9 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import { useLanguage } from "@/lib/language-context"
+import { Great_Vibes } from "next/font/google"
+
+const greatVibes = Great_Vibes({ subsets: ["latin"], weight: "400" })
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -47,21 +50,21 @@ export function HeroSection() {
           </div>
 
           <h1
-            className={`text-5xl md:text-7xl lg:text-8xl font-bold text-[#5C4A1F] mb-2 leading-none tracking-wide ${
+            className={`text-6xl md:text-8xl lg:text-9xl font-bold text-[#5C4A1F] -mb-2 md:-mb-4 leading-none tracking-wide ${
               isVisible ? "animate-slide-in-left" : "opacity-0"
-            }`}
+            } ${greatVibes.className}`}
             style={{ animationDelay: "0.4s" }}
           >
-            Omaya Class
+            Mahmoud Bey
           </h1>
 
           <h2
-            className={`text-3xl md:text-4xl font-light text-[#C9A962] mb-4 tracking-[0.3em] uppercase ${
+            className={`text-xl md:text-2xl font-light text-[#5C4A1F] mb-4 tracking-[0.3em] uppercase ${
               isVisible ? "animate-slide-in-right" : "opacity-0"
             }`}
             style={{ animationDelay: "0.6s" }}
           >
-            Dairy
+            Omaya Class Dairy
           </h2>
 
           <div

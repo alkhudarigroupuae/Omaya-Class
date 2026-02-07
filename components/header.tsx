@@ -162,7 +162,7 @@ export function Header() {
             >
               <Image
                 src="/logo.png"
-                alt="Omaya Class Dairy"
+                alt="Mahmoud Bey Dairy"
                 width={100}
                 height={100}
                 className={`transition-all duration-500 ${scrolled ? "h-16" : "h-20"} w-auto`}
@@ -170,100 +170,105 @@ export function Header() {
             </Link>
 
             {/* Right Navigation */}
-            <nav className="hidden md:flex items-center justify-start gap-6 flex-1 pl-6">
-              <Link
-                href="/branches"
-                className="relative text-foreground font-medium tracking-wide uppercase text-sm group overflow-hidden"
-              >
-                <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">
-                  {t("branches")}
-                </span>
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
-              </Link>
-
-              <Link
-                href="/about"
-                className="relative text-foreground font-medium tracking-wide uppercase text-sm group overflow-hidden"
-              >
-                <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">
-                  {t("about")}
-                </span>
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
-              </Link>
-
-              <Link
-                href="/blog"
-                className="relative text-foreground font-medium tracking-wide uppercase text-sm group overflow-hidden"
-              >
-                <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">
-                  {t("blog")}
-                </span>
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
-              </Link>
-
-              {/* Language Switcher */}
-              <div
-                className="relative"
-                onMouseEnter={() => setLangMenuOpen(true)}
-                onMouseLeave={() => setLangMenuOpen(false)}
-              >
-                <button className="flex items-center gap-1 p-2 rounded-full border border-transparent hover:border-primary/30 hover:bg-primary/5 transition-all duration-300 group">
-                  <Globe
-                    size={20}
-                    className="text-foreground group-hover:text-primary transition-colors duration-300"
-                  />
-                  <span className="text-xs font-medium text-foreground group-hover:text-primary transition-colors duration-300">
-                    {language === "en" ? "EN" : "AR"}
-                  </span>
-                </button>
-
-                <div
-                  className={`absolute top-full right-0 mt-2 transition-all duration-300 ${
-                    langMenuOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
-                  }`}
+            <nav className="hidden md:flex items-center justify-end gap-6 flex-1 pl-6">
+              <div className="flex items-center gap-6 mr-auto">
+                <Link
+                  href="/branches"
+                  className="relative text-foreground font-medium tracking-wide uppercase text-sm group overflow-hidden"
                 >
-                  <div className="bg-background/98 backdrop-blur-xl border border-primary/30 rounded-xl overflow-hidden min-w-[100px]">
-                    <button
-                      onClick={() => setLanguage("en")}
-                      className={`w-full px-4 py-2 text-sm font-medium text-left hover:bg-primary/10 transition-colors ${
-                        language === "en" ? "text-primary bg-primary/5" : "text-foreground"
-                      }`}
-                    >
-                      English
-                    </button>
-                    <button
-                      onClick={() => setLanguage("ar")}
-                      className={`w-full px-4 py-2 text-sm font-medium text-left hover:bg-primary/10 transition-colors ${
-                        language === "ar" ? "text-primary bg-primary/5" : "text-foreground"
-                      }`}
-                    >
-                      العربية
-                    </button>
-                  </div>
-                </div>
+                  <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">
+                    {t("branches")}
+                  </span>
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
+                </Link>
+
+                <Link
+                  href="/about"
+                  className="relative text-foreground font-medium tracking-wide uppercase text-sm group overflow-hidden"
+                >
+                  <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">
+                    {t("about")}
+                  </span>
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
+                </Link>
+
+                <Link
+                  href="/news"
+                  className="relative text-foreground font-medium tracking-wide uppercase text-sm group overflow-hidden"
+                >
+                  <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">
+                    {t("news")}
+                  </span>
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
+                </Link>
               </div>
 
-              <Link
-                href="/cart"
-                className="relative group p-2 rounded-full border border-transparent hover:border-primary/30 hover:bg-primary/5 transition-all duration-300"
-              >
-                <ShoppingCart
-                  size={22}
-                  className="text-foreground group-hover:text-primary transition-colors duration-300"
-                />
-                {totalItems > 0 && (
-                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-white text-xs rounded-full flex items-center justify-center animate-pulse">
-                    {totalItems}
-                  </span>
-                )}
-              </Link>
+              {/* Icons Group */}
+              <div className="flex items-center gap-2">
+                {/* Language Switcher */}
+                <div
+                  className="relative"
+                  onMouseEnter={() => setLangMenuOpen(true)}
+                  onMouseLeave={() => setLangMenuOpen(false)}
+                >
+                  <button className="flex items-center gap-1 p-2 rounded-full border border-transparent hover:border-primary/30 hover:bg-primary/5 transition-all duration-300 group">
+                    <Globe
+                      size={20}
+                      className="text-foreground group-hover:text-primary transition-colors duration-300"
+                    />
+                    <span className="text-xs font-medium text-foreground group-hover:text-primary transition-colors duration-300">
+                      {language === "en" ? "EN" : "AR"}
+                    </span>
+                  </button>
 
-              <Link
-                href="/account"
-                className="relative group p-2 rounded-full border border-transparent hover:border-primary/30 hover:bg-primary/5 transition-all duration-300"
-              >
-                <User size={22} className="text-foreground group-hover:text-primary transition-colors duration-300" />
-              </Link>
+                  <div
+                    className={`absolute top-full right-0 mt-2 transition-all duration-300 ${
+                      langMenuOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                    }`}
+                  >
+                    <div className="bg-background/98 backdrop-blur-xl border border-primary/30 rounded-xl overflow-hidden min-w-[100px]">
+                      <button
+                        onClick={() => setLanguage("en")}
+                        className={`w-full px-4 py-2 text-sm font-medium text-left hover:bg-primary/10 transition-colors ${
+                          language === "en" ? "text-primary bg-primary/5" : "text-foreground"
+                        }`}
+                      >
+                        English
+                      </button>
+                      <button
+                        onClick={() => setLanguage("ar")}
+                        className={`w-full px-4 py-2 text-sm font-medium text-left hover:bg-primary/10 transition-colors ${
+                          language === "ar" ? "text-primary bg-primary/5" : "text-foreground"
+                        }`}
+                      >
+                        العربية
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <Link
+                  href="/cart"
+                  className="relative group p-2 rounded-full border border-transparent hover:border-primary/30 hover:bg-primary/5 transition-all duration-300"
+                >
+                  <ShoppingCart
+                    size={22}
+                    className="text-foreground group-hover:text-primary transition-colors duration-300"
+                  />
+                  {totalItems > 0 && (
+                    <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-white text-xs rounded-full flex items-center justify-center animate-pulse">
+                      {totalItems}
+                    </span>
+                  )}
+                </Link>
+
+                <Link
+                  href="/account"
+                  className="relative group p-2 rounded-full border border-transparent hover:border-primary/30 hover:bg-primary/5 transition-all duration-300"
+                >
+                  <User size={22} className="text-foreground group-hover:text-primary transition-colors duration-300" />
+                </Link>
+              </div>
             </nav>
 
             {/* Mobile menu button */}
@@ -348,18 +353,18 @@ export function Header() {
                 {t("branches")}
               </Link>
               <Link
-                href="/about"
+                href="/news"
                 className="text-foreground font-medium tracking-wide uppercase text-sm hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {t("about")}
+                {t("news")}
               </Link>
               <Link
-                href="/blog"
+                href="/news"
                 className="text-foreground font-medium tracking-wide uppercase text-sm hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {t("blog")}
+                {t("news")}
               </Link>
               <Link
                 href="/account"

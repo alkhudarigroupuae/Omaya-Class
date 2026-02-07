@@ -195,7 +195,7 @@ export function ProductDetails({ productId }: { productId: string }) {
     if (!html) return ""
     const doc = new DOMParser().parseFromString(html, "text/html")
     let text = doc.body.textContent || ""
-    text = text.replace(/Scraped from Omaya Class\.?\s*/gi, "")
+    text = text.replace(/Scraped from (Omaya Class|Mahmoud Bey)\.?\s*/gi, "")
     text = text.replace(/Original Price:\s*[\d,]+\s*ل\.س\.?\s*/gi, "")
     text = text.replace(/[\d,]+\s*ل\.س\.?\s*/gi, "")
     text = text.trim()

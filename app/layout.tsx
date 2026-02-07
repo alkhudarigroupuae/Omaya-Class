@@ -10,9 +10,9 @@ import "./globals.css"
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "500", "600", "700"] })
 
 export const metadata: Metadata = {
-  title: "Omaya Class Dairy | Premium Ice Cream, Cakes & Patisserie",
+  title: "Mahmoud Bey Dairy | Premium Ice Cream, Cakes & Patisserie",
   description:
-    "Discover handcrafted ice cream, cakes, and fine patisserie at Omaya Class Dairy. Where tradition meets excellence since 1998.",
+    "Discover handcrafted ice cream, cakes, and fine patisserie at Mahmoud Bey Dairy. Where tradition meets excellence since 1998.",
   generator: "v0.app",
   icons: {
     icon: "/logo.png",

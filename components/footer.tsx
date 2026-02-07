@@ -35,8 +35,8 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-4">
           {/* Brand */}
           <div className="flex flex-col items-center">
-            <Image src="/logo.png" alt="Omaya Class Dairy" width={60} height={60} className="mb-1" />
-            <h3 className="text-xl font-serif font-bold tracking-wide text-white text-center">Omaya Class</h3>
+            <Image src="/logo.png" alt="Mahmoud Bey Dairy" width={60} height={60} className="mb-1" />
+            <h3 className="text-xl font-serif font-bold tracking-wide text-white text-center">Mahmoud Bey</h3>
             <div className="flex items-center gap-2">
               <div className="h-px flex-1 bg-[#b8860b]/50" />
               <span className="text-[#b8860b] text-xs tracking-[0.3em] uppercase">Dairy</span>
@@ -58,6 +58,9 @@ export function Footer() {
               <Link href="/about" className="text-white hover:text-[#b8860b] transition-colors tracking-wide text-xs">
                 {t("aboutUs")}
               </Link>
+              <Link href="/factory" className="text-white hover:text-[#b8860b] transition-colors tracking-wide text-xs">
+                {t("factory")}
+              </Link>
               <Link
                 href="/branches"
                 className="text-white hover:text-[#b8860b] transition-colors tracking-wide text-xs"
@@ -70,8 +73,8 @@ export function Footer() {
               >
                 {t("employment")}
               </Link>
-              <Link href="/blog" className="text-white hover:text-[#b8860b] transition-colors tracking-wide text-xs">
-                {t("blog")}
+              <Link href="/news" className="text-white hover:text-[#b8860b] transition-colors tracking-wide text-xs">
+                {t("news")}
               </Link>
               <Link href="/events" className="text-white hover:text-[#b8860b] transition-colors tracking-wide text-xs">
                 {t("events")}
@@ -107,7 +110,7 @@ export function Footer() {
 
         <div className="border-t border-white/10 mt-3 pt-2 text-center">
           <p className="tracking-wide text-white text-xs">
-            © {new Date().getFullYear()} Omaya Class Dairy. {t("allRightsReserved")}.
+            © {new Date().getFullYear()} Mahmoud Bey Dairy. {t("allRightsReserved")}.
           </p>
           <p className="text-xs mt-1 tracking-wide text-white">
             {t("developedBy")}{" "}

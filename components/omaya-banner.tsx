@@ -18,7 +18,7 @@ export function OmayaBanner() {
         >
           <img
             src="/elegant-layered-chocolate-cake-with-gold-decoratio.jpg"
-            alt="Omaya Class"
+            alt="Mahmoud Bey"
             className="w-full h-full object-cover"
           />
         </div>
@@ -50,7 +50,7 @@ export function OmayaBanner() {
           className={`mb-8 transition-all duration-1000 ${mounted ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}
         >
           <div className="w-24 h-24 mx-auto rounded-full border-2 border-accent/50 flex items-center justify-center bg-background/20 backdrop-blur-md shadow-2xl">
-            <span className="text-4xl font-bold text-accent">O</span>
+            <span className="text-4xl font-bold text-accent">M</span>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ export function OmayaBanner() {
         <h1
           className={`text-6xl md:text-8xl lg:text-9xl font-semibold text-white text-center tracking-tight transition-all duration-1000 delay-300 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
         >
-          <span className="block text-balance">Omaya Class</span>
+          <span className="block text-balance">Mahmoud Bey</span>
         </h1>
 
         {/* Animated decorative line */}

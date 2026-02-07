@@ -18,8 +18,9 @@ export const translations: Translations = {
   quickShop: { en: "Quick Shop", ar: "تسوق سريع" },
   branches: { en: "Branches", ar: "الفروع" },
   aboutUs: { en: "About", ar: "عنّا" }, // Changed "About Us" to "About"
-  about: { en: "About", ar: "عنّا" }, // Added separate "about" key for menu
-  blog: { en: "Blog", ar: "المدونة" },
+  about: { en: "About", ar: "عنّا" },
+  factory: { en: "Factory for Ice Cream and Cake", ar: "مصنع البوظة والكيك" },
+  news: { en: "News", ar: "الأخبار" },
   cart: { en: "Cart", ar: "السلة" },
   account: { en: "Account", ar: "حسابي" },
   myAccount: { en: "My Account", ar: "حسابي" },
@@ -35,7 +36,14 @@ export const translations: Translations = {
   waffleCrepe: { en: "Waffle & Crepe", ar: "وافل وكريب" },
   juiceFruit: { en: "Juice & Fruit", ar: "عصائر وفواكه" },
   mainMeals: { en: "Main Meals", ar: "وجبات رئيسية" },
-  omayaProducts: { en: "Omaya Products", ar: "منتجات أمية" },
+  omayaProducts: { en: "Mahmoud Bey Products", ar: "منتجات أمية" },
+  packagingBiscuitCake: { en: "Packaging Biscuit & Cake", ar: "تغليف البسكويت والكيك" },
+  packagingIceCream: { en: "Packaging Ice Cream Products", ar: "تغليف منتجات الآيس كريم" },
+  exclusiveProducts: { en: "Exclusive Products", ar: "منتجات حصرية" },
+  exportQualityText: {
+    en: "We manufacture export-dedicated products in accordance with the highest international quality standards, with a strong focus on flavor consistency, manufacturing precision, and excellence that meets the demands of global markets.",
+    ar: "نقوم بتصنيع منتجات مخصصة للتصدير وفقاً لأعلى معايير الجودة العالمية، مع تركيز قوي على ثبات النكهة، دقة التصنيع، والتميز الذي يلبي متطلبات الأسواق العالمية.",
+  },
   ramadan: { en: "Ramadan", ar: "رمضان" },
   croissant: { en: "Croissant", ar: "كرواسون" },
   cookies: { en: "Cookies", ar: "كوكيز" },
@@ -91,9 +99,9 @@ export const translations: Translations = {
 
   // About Section
   ourHeritage: { en: "Our Heritage", ar: "تراثنا" },
-  aboutOmayaClass: { en: "About Omaya Class", ar: "عن أمية كلاس" },
+  aboutOmayaClass: { en: "About Mahmoud Bey", ar: "عن أمية كلاس" },
   aboutDescription1: {
-    en: "For over two decades, Omaya Class Dairy has been synonymous with excellence in premium confectionery. Our master craftsmen blend time-honored traditions with innovative techniques to create extraordinary desserts.",
+    en: "For over two decades, Mahmoud Bey Dairy has been synonymous with excellence in premium confectionery. Our master craftsmen blend time-honored traditions with innovative techniques to create extraordinary desserts.",
     ar: "لأكثر من عقدين، كانت أمية كلاس مرادفة للتميز في صناعة الحلويات الفاخرة. يمزج حرفيونا المهرة بين التقاليد العريقة والتقنيات المبتكرة لصنع حلويات استثنائية.",
   },
   aboutDescription2: {
@@ -112,20 +120,20 @@ export const translations: Translations = {
   contact: { en: "Contact", ar: "الاتصال" },
   hours: { en: "Hours", ar: "ساعات العمل" },
   damascusSyria: { en: "Damascus - Syria", ar: "دمشق - سوريا" },
-  omayaClassDairy: { en: "Omaya Class Dairy", ar: "أمية كلاس دايري" },
+  omayaClassDairy: { en: "Mahmoud Bey Dairy", ar: "أمية كلاس دايري" },
   callUsForOrders: { en: "Call us for orders", ar: "اتصل بنا للطلبات" },
   openDaily: { en: "Open Daily", ar: "مفتوح يومياً" },
 
   // Branches
   ourBranches: { en: "Our Branches", ar: "فروعنا" },
-  findNearestBranch: { en: "Find your nearest Omaya Class branch", ar: "اعثر على أقرب فرع لأمية كلاس" },
+  findNearestBranch: { en: "Find your nearest Mahmoud Bey branch", ar: "اعثر على أقرب فرع لأمية كلاس" },
   comingSoon: { en: "Coming Soon", ar: "قريباً" },
   open: { en: "Open", ar: "مفتوح" },
 
   // Employment
   joinOurTeam: { en: "Join Our Team", ar: "انضم لفريقنا" },
   employmentDescription: {
-    en: "We're always looking for talented individuals to join the Omaya Class family",
+    en: "We're always looking for talented individuals to join the Mahmoud Bey family",
     ar: "نبحث دائماً عن أفراد موهوبين للانضمام إلى عائلة أمية كلاس",
   },
   fullName: { en: "Full Name", ar: "الاسم الكامل" },
@@ -150,7 +158,7 @@ export const translations: Translations = {
   bachelors: { en: "Bachelor's Degree", ar: "بكالوريوس" },
   masters: { en: "Master's Degree", ar: "ماجستير" },
   tellUsAboutYourself: {
-    en: "Tell us about yourself and why you want to join Omaya Class...",
+    en: "Tell us about yourself and why you want to join Mahmoud Bey...",
     ar: "أخبرنا عن نفسك ولماذا تريد الانضمام إلى أمية كلاس...",
   },
   applicationSuccess: {
@@ -218,7 +226,7 @@ export const translations: Translations = {
   prophetBirthdayCommemoration: { en: "Prophet's Birthday Commemoration", ar: "إحياء ذكرى المولد النبوي الشريف" },
 
   prideStatement: {
-    en: "At Omaya Class, we take pride in bringing to our valued customers the essence of our long and distinguished expertise in crafting Italian and Russian ice cream, as well as all types of Cassata.",
+    en: "At Mahmoud Bey, we take pride in bringing to our valued customers the essence of our long and distinguished expertise in crafting Italian and Russian ice cream, as well as all types of Cassata.",
     ar: "نفخر في أمية كلاس بأن نضع بين ايدي زبائننا الكرام خلاصة خبرتنا الطويلة والعريقة في صناعة البوظة الإيطالية والروسية وكافة أنواع الكاسيتا.",
   },
 

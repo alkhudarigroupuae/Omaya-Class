@@ -76,7 +76,7 @@ export default function EventsPage() {
           <div className="absolute bottom-10 right-10 w-24 h-24 border border-[#C9A962] rounded-full" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <span className="inline-block text-[#C9A962] text-sm tracking-[0.3em] uppercase mb-4">Omaya Class</span>
+          <span className="inline-block text-[#C9A962] text-sm tracking-[0.3em] uppercase mb-4">Mahmoud Bey</span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{t("ourEvents")}</h1>
           <div className="w-24 h-1 bg-[#C9A962] mx-auto mb-6" />
           <p className="text-white/70 max-w-2xl mx-auto">{t("latestEventsDescription")}</p>
